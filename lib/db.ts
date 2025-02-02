@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 import { cache } from "react";
 
-const MONGODB_URI = process.env.MONGO_URI!;
+const MONGODB_URI = process.env.MONGODB_URI!;
 
 console.log(MONGODB_URI)
 
 if (!MONGODB_URI) {
-  throw new Error("No MONGO_URI provided");
+  throw new Error("No MONGODB_URI provided");
 }
 
 let cached = global.mongoose;
