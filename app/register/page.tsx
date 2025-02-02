@@ -57,14 +57,14 @@ const Register = () => {
   return (
     <div className='min-h-screen flex items-center justify-center'>
       <div>
-        <div className='p-8 bg-zinc-800 rounded-xl w-[500px]'>
+        <div className='p-8 shadow shadow-green-800 border border-gray-600 rounded-xl w-[500px]'>
           <h2 className='font-bold text-2xl text-center'>Register</h2>
 
-          <form onSubmit={handleRegister} className='flex flex-col gap-4 mt-6'>
+          <form onSubmit={handleRegister} className='flex flex-col gap-5 mt-8'>
             <input
               type="email"
               placeholder='Enter Email'
-              className='bg-transparent p-4 border rounded-lg'
+              className='bg-transparent p-4 rounded-lg border border-gray-600 shadow shadow-green-800'
               required
               value={email}
               onChange={e => setEmail(e.target.value)}
@@ -72,14 +72,14 @@ const Register = () => {
             <input
               type="password"
               placeholder='Enter Password'
-              className='bg-transparent p-4 border rounded-lg'
+              className='bg-transparent p-4 rounded-lg border border-gray-600 shadow shadow-green-800'
               required
               value={password}
               onChange={e => setPassword(e.target.value)}
             />
             <button
               type="submit"
-              className='bg-zinc-900 hover:bg-zinc-950 rounded-lg p-4'
+              className='font-bold text-black bg-white hover:bg-slate-200 rounded-lg p-4 '
               disabled={loading}
             >
               {loading ? "Registering..." : "Register"}
