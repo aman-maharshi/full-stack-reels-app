@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import Header from '../components/Header';
 
 interface Message {
   type: string;
@@ -56,6 +57,7 @@ const Register = () => {
 
   return (
     <div className='min-h-screen flex items-center justify-center'>
+      <Header />
       <div>
         <div className='p-8 shadow shadow-green-800 border border-gray-600 rounded-xl w-[500px]'>
           <h2 className='font-bold text-2xl text-center'>Register</h2>
