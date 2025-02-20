@@ -1,6 +1,5 @@
 "use client"
 import { ImageKitProvider } from "imagekitio-next"
-import { Session } from "inspector/promises"
 import { SessionProvider } from "next-auth/react"
 
 const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT
